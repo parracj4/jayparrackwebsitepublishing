@@ -8,15 +8,15 @@ export default function Home() {
           HERO - MASSIVE TYPOGRAPHY + n8n GLOW
           ============================================ */}
       <section className="min-h-[85vh] flex flex-col justify-center px-6 md:px-12 lg:px-20 pt-24 pb-12 relative">
-        {/* Ambient glow orbs */}
-        <div className="absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#3b82f6]/10 rounded-full blur-[150px] pointer-events-none" />
-        <div className="absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#60a5fa]/10 rounded-full blur-[150px] pointer-events-none" />
+        {/* Ambient glow orbs - hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-1/4 left-1/4 w-[500px] h-[500px] bg-[#3b82f6]/10 rounded-full blur-[150px] pointer-events-none" />
+        <div className="hidden md:block absolute bottom-1/4 right-1/4 w-[400px] h-[400px] bg-[#60a5fa]/10 rounded-full blur-[150px] pointer-events-none" />
 
-        {/* Floating decorative elements */}
-        <div className="absolute top-40 right-20 w-2 h-2 rounded-full bg-[#3b82f6] float-slow opacity-60" />
-        <div className="absolute top-60 right-40 w-1 h-1 rounded-full bg-[#60a5fa] float-medium opacity-40" />
-        <div className="absolute bottom-40 left-40 w-1.5 h-1.5 rounded-full bg-[#3b82f6] float-medium opacity-50" />
-        <div className="absolute top-1/2 right-1/4 w-1 h-1 rounded-full bg-white float-slow opacity-30" />
+        {/* Floating decorative elements - hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-40 right-20 w-2 h-2 rounded-full bg-[#3b82f6] float-slow opacity-60" />
+        <div className="hidden md:block absolute top-60 right-40 w-1 h-1 rounded-full bg-[#60a5fa] float-medium opacity-40" />
+        <div className="hidden md:block absolute bottom-40 left-40 w-1.5 h-1.5 rounded-full bg-[#3b82f6] float-medium opacity-50" />
+        <div className="hidden md:block absolute top-1/2 right-1/4 w-1 h-1 rounded-full bg-white float-slow opacity-30" />
 
         {/* Vertical accent line with glow dot */}
         <div className="absolute top-28 left-6 md:left-12 lg:left-20 flex flex-col items-center gap-2">
@@ -132,12 +132,12 @@ export default function Home() {
           SERVICES - GLASS CARDS
           ============================================ */}
       <section className="py-16 px-6 md:px-12 lg:px-20 relative">
-        {/* Background glow */}
-        <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-[#60a5fa]/5 rounded-full blur-[150px] pointer-events-none" />
+        {/* Background glow - hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-1/2 left-0 -translate-y-1/2 w-[500px] h-[500px] bg-[#60a5fa]/5 rounded-full blur-[150px] pointer-events-none" />
 
-        {/* Floating elements */}
-        <div className="absolute top-20 right-32 w-1 h-1 rounded-full bg-[#60a5fa] float-slow opacity-40" />
-        <div className="absolute bottom-32 right-20 w-1.5 h-1.5 rounded-full bg-[#3b82f6] float-medium opacity-50" />
+        {/* Floating elements - hidden on mobile */}
+        <div className="hidden md:block absolute top-20 right-32 w-1 h-1 rounded-full bg-[#60a5fa] float-slow opacity-40" />
+        <div className="hidden md:block absolute bottom-32 right-20 w-1.5 h-1.5 rounded-full bg-[#3b82f6] float-medium opacity-50" />
 
         <div className="max-w-6xl mx-auto">
           {/* Section header */}
@@ -299,13 +299,13 @@ export default function Home() {
           FINAL CTA - DRAMATIC
           ============================================ */}
       <section className="py-20 px-6 md:px-12 lg:px-20 relative">
-        {/* Background glows */}
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#3b82f6]/10 rounded-full blur-[150px] pointer-events-none" />
+        {/* Background glows - hidden on mobile for performance */}
+        <div className="hidden md:block absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[300px] bg-[#3b82f6]/10 rounded-full blur-[150px] pointer-events-none" />
 
-        {/* Floating elements */}
-        <div className="absolute top-20 left-20 w-1 h-1 rounded-full bg-[#3b82f6] float-slow opacity-40" />
-        <div className="absolute bottom-20 right-32 w-1.5 h-1.5 rounded-full bg-[#60a5fa] float-medium opacity-50" />
-        <div className="absolute top-1/2 left-1/4 w-1 h-1 rounded-full bg-white float-medium opacity-20" />
+        {/* Floating elements - hidden on mobile */}
+        <div className="hidden md:block absolute top-20 left-20 w-1 h-1 rounded-full bg-[#3b82f6] float-slow opacity-40" />
+        <div className="hidden md:block absolute bottom-20 right-32 w-1.5 h-1.5 rounded-full bg-[#60a5fa] float-medium opacity-50" />
+        <div className="hidden md:block absolute top-1/2 left-1/4 w-1 h-1 rounded-full bg-white float-medium opacity-20" />
 
         <div className="max-w-4xl mx-auto text-center relative">
           <span className="text-sm uppercase tracking-widest text-[#a8b5c4] mb-6 block">

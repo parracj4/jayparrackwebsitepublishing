@@ -407,3 +407,69 @@ body::before {
 .corner-accents:hover::after {
   opacity: 1;
 }
+
+/* ============================================
+   MOBILE PERFORMANCE OPTIMIZATIONS
+   Disable heavy effects on mobile devices
+   ============================================ */
+
+@media (max-width: 768px) {
+  /* Disable blur on glass cards - major performance hit */
+  .glass-card {
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+    background: rgba(26, 31, 38, 0.95);
+  }
+
+  /* Disable all floating animations */
+  .float-slow,
+  .float-medium,
+  .animate-float-slow,
+  .animate-float-medium,
+  .animate-float {
+    animation: none !important;
+  }
+
+  /* Disable pulse ring animations */
+  .pulse-ring::after {
+    animation: none !important;
+    display: none;
+  }
+
+  /* Slow down marquee or disable */
+  .animate-marquee {
+    animation-duration: 40s;
+  }
+
+  /* Disable gradient text animation */
+  .animated-gradient-text {
+    animation: none;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+
+  /* Disable gradient border animation */
+  .gradient-border::before {
+    animation: none;
+    background: #3b82f6;
+  }
+
+  /* Disable magnetic hover */
+  .magnetic-hover:hover {
+    transform: none;
+  }
+
+  /* Simplify glow effects */
+  .glow-blue {
+    box-shadow: none;
+  }
+
+  .text-glow-blue {
+    text-shadow: none;
+  }
+
+  .glow-dot {
+    box-shadow: 0 0 8px #3b82f6;
+  }
+}
